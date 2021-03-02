@@ -13,9 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.androiddevchallenge.ui.theme
+package com.example.androiddevchallenge.util
 
-import androidx.compose.material.Typography
+fun getAgeStr(age: Float): String {
+    val years = age.toInt()
+    val months = Math.round((age % 1) * 12)
+    var dateStr = ""
 
-// Set of Material typography styles to start with
-val typography = Typography()
+    if (years > 0)
+        dateStr = if (years == 1) "1 Year" else "$years Years"
+    if (months > 0) {
+        if (years > 0) dateStr += " "
+        dateStr += if (months == 1) "1 Month" else "$months Months"
+    }
+    return dateStr
+}

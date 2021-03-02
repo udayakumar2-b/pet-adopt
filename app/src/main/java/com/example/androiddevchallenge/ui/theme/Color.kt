@@ -17,7 +17,9 @@ package com.example.androiddevchallenge.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val purple200 = Color(0xFFBB86FC)
-val purple500 = Color(0xFF6200EE)
-val purple700 = Color(0xFF3700B3)
-val teal200 = Color(0xFF03DAC5)
+val primaryColor = Color(0xff8c9eff)
+val primaryLightColor = Color(0xffc0cfff)
+val primaryDarkColor = Color(0xff49a7cc)
+val secondaryColor = Color(0xffc51162)
+val secondaryLightColor = Color(0xfffc548e)
+val secondaryDarkColor = Color(0xff8e0038)

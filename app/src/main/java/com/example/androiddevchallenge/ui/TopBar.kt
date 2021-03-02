@@ -13,39 +13,36 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.androiddevchallenge
+package com.example.androiddevchallenge.ui
 
-import android.os.Bundle
-import androidx.activity.compose.setContent
-import androidx.appcompat.app.AppCompatActivity
+import androidx.compose.material.Text
+import androidx.compose.material.TopAppBar
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.androiddevchallenge.ui.MyNavController
 import com.example.androiddevchallenge.ui.theme.MyTheme
 
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContent {
-            MyTheme {
-                MyNavController()
-            }
+@Composable
+fun TopBar(modifier: Modifier = Modifier) {
+    TopAppBar(
+        title = {
+            Text(text = "Adopt A Pup")
         }
+    )
+}
+
+@Preview("Light Theme")
+@Composable
+fun TopBarLightPreview() {
+    MyTheme(darkTheme = false) {
+        TopBar()
     }
 }
 
-@Preview("Light Theme", widthDp = 360, heightDp = 640)
+@Preview("Dark Theme")
 @Composable
-fun LightPreview() {
-    MyTheme {
-        MyNavController()
-    }
-}
-
-@Preview("Dark Theme", widthDp = 360, heightDp = 640)
-@Composable
-fun DarkPreview() {
+fun TopBarDarkPreview() {
     MyTheme(darkTheme = true) {
-        MyNavController()
+        TopBar()
     }
 }

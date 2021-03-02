@@ -13,9 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.androiddevchallenge.ui.theme
+package com.example.androiddevchallenge.model
 
-import androidx.compose.material.Typography
+import com.example.androiddevchallenge.model.enum.Gender
 
-// Set of Material typography styles to start with
-val typography = Typography()
+data class Dog(val id: Int, val name: String, val gender: Gender, val age: Float, val type: String, val description: String, val image: Int, var isAdopted: Boolean)

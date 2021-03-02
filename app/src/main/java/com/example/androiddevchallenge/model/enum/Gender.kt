@@ -13,9 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.androiddevchallenge.ui.theme
+package com.example.androiddevchallenge.model.enum
 
-import androidx.compose.material.Typography
-
-// Set of Material typography styles to start with
-val typography = Typography()
+enum class Gender {
+    MALE,
+    FEMALE
+}
