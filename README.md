@@ -4,11 +4,11 @@
 
 
 ## :scroll: Description
-Sample app to explore Android Jetpack Compose
+Sample app to explore Android Jetpack Compose. Abd to participate in Android Dev Challenge.
 
 ## :bulb: Motivation and Context
 Built the app in less than 4 Hours, using Jetpack Compose.
-Having worked in Flutter, I'm finding Jetpack Compose intuitively similar.
+Having worked in Flutter, I'm finding Jetpack Compose intuitively similar. Will easily be my go-to once the some of the bugs and tooling issues are resolved.  Hope to contribute.
 
 
 ## :camera_flash: Screenshots
